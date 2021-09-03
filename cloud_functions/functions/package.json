@@ -1,0 +1,29 @@
+{
+  "name": "denizen_functions",
+  "description": "Functions and API endpoints for Denizen",
+  "scripts": {
+    "lint": "prettier --write ./ && eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1",
+    "node-fetch": "^2.6.1",
+    "prettier": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
